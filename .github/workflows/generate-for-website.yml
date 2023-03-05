@@ -48,6 +48,8 @@ jobs:
         git commit -m "Adding latest documentation build."
         git push prime main:documentation-changes-$count
     - name: Create pull request
+      env:
+        GH_TOKEN: ${{ github.token }}
       run: |
         gh api \
           --method POST \
