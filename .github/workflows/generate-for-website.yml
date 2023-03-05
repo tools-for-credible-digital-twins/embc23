@@ -1,0 +1,53 @@
+
+name: Build documentation for website
+
+on: push
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-22.04
+    if: github.repository == 'tools-for-credible-digital-twins/embc23'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Setup virtual environment
+      run: |
+        python3 -m venv venv-sphinx
+        source venv-sphinx/bin/activate
+        pip install -U pip
+        pip install Sphinx
+    - name: Build documentation
+      run: |
+        source venv-sphinx/bin/activate
+        make html xml
+    - name: Checkout website
+      uses: actions/checkout@v3
+      with:
+        repository: 'tools-for-credible-digital-twins/tools-for-credible-digital-twins.github.io'
+        path: 'website'
+    - name: Prepare documentation destination
+      run: |
+        mkdir -p website/public/documentation/latest
+        rm -rf website/public/documentation/latest
+        cp -R build/xml/ website/public/documentation/latest/
+    - name: Push changes to website
+      run: |
+        cd website
+        count=`git branch --all | grep -c "remotes/origin"`
+        echo "Matching branch count: $count"
+        git add -A
+        git config user.name dependabot-abi && git config user.email dependabot.abi@gmail.com
+        git commit -m "Adding latest documentation build."
+        git push origin main:documentation-changes-$count
+    - name: Create pull request
+      run: |
+        gh api \
+          --method POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          /repos/tools-for-credible-digital-twins/tools-for-credible-digital-twins.github.io/pulls \
+          -f title='Update latest documentation' \
+          -f body='Automatically generated pull request from https://github.com/tools-for-credible-digital-twins/embc23.' \
+          -f head='documentation-changes-$count' \
+          -f base='main'
+
