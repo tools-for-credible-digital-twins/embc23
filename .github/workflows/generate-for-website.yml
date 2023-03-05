@@ -50,6 +50,7 @@ jobs:
     - name: Set documentation branch name
       id: documentation-branch
       shell: python
+      working-directory: website
       run: |
         import os
         with open("branches.txt") as f:
