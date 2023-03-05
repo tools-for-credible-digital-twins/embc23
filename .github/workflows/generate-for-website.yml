@@ -10,9 +10,14 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+    - name: Setup Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+
     - name: Setup virtual environment
       run: |
-        python3 -m venv venv-sphinx
+        python -m venv venv-sphinx
         source venv-sphinx/bin/activate
         pip install -U pip
         pip install Sphinx
@@ -37,20 +42,41 @@ jobs:
         mkdir -p website/public/documentation/latest
         rm -rf website/public/documentation/latest
         cp -R build/xml/ website/public/documentation/latest/
-    - name: Push changes to website
+    - name: Save branches information
       run: |
         cd website
         git fetch --prune
-        count=`git branch --all | grep -c "remotes/origin"`
-        echo "Matching branch count: $count"
+        git branch --all > branches.txt
+    - name: Set documentation branch name
+      id: documentation-branch
+      shell: python
+      run: |
+        import os
+        with open("branches.txt") as f:
+          content = f.read()
+
+        count = 1
+        while content.find(f"documentation-changes-{count}") != -1:
+          count += 1
+  
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+          f.write(f"name=documentation-changes-{count}\n")
+        print(f"name=documentation-changes-{count}")
+    - name: Remove branches.txt file
+      run: |
+        cd website
+        rm branches.txt 
+    - name: Push changes to website
+      run: |
+        cd website
         git remote add prime git@github.com:tools-for-credible-digital-twins/tools-for-credible-digital-twins.github.io.git
         git add -A
         git config user.name dependabot-abi && git config user.email dependabot.abi@gmail.com
         git commit -m "Adding latest documentation build."
-        git push prime main:documentation-changes-$count
+        git push prime main:${{ steps.documentation-branch.outputs.name }}
     - name: Create pull request
       env:
-        GH_TOKEN: ${{ github.token }}
+        GH_TOKEN: ${{ secrets.SSH_DEPLOY_PRIVATE_KEY }}
       run: |
         gh api \
           --method POST \
