@@ -40,6 +40,7 @@ jobs:
     - name: Push changes to website
       run: |
         cd website
+        git fetch --prune
         count=`git branch --all | grep -c "remotes/origin"`
         echo "Matching branch count: $count"
         git remote add prime git@github.com:tools-for-credible-digital-twins/tools-for-credible-digital-twins.github.io.git
