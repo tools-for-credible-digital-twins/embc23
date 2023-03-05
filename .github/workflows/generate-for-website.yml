@@ -93,6 +93,6 @@ jobs:
           /repos/tools-for-credible-digital-twins/tools-for-credible-digital-twins.github.io/pulls \
           -f title='Update latest documentation' \
           -f body='Automatically generated pull request from https://github.com/tools-for-credible-digital-twins/embc23.' \
-          -f head='documentation-changes-$count' \
+          -f head='${{ steps.documentation-branch.outputs.name }}' \
           -f base='main'
 
