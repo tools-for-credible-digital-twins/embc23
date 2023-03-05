@@ -75,9 +75,16 @@ jobs:
         git config user.name dependabot-abi && git config user.email dependabot.abi@gmail.com
         git commit -m "Adding latest documentation build."
         git push prime main:${{ steps.documentation-branch.outputs.name }}
+    - name: Get GitHub token
+      uses: tibdex/github-app-token@v1
+      id: get-installation-token
+      with:
+        app_id: 301361
+        installation_id: 34898622
+        private_key: ${{ secrets.APP_PRIVATE_KEY }}
     - name: Create pull request
       env:
-        GH_TOKEN: ${{ secrets.SSH_DEPLOY_PRIVATE_KEY }}
+        GH_TOKEN: ${{ steps.get-installation-token.outputs.token }}
       run: |
         gh api \
           --method POST \
