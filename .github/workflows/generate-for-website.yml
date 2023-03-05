@@ -42,10 +42,11 @@ jobs:
         cd website
         count=`git branch --all | grep -c "remotes/origin"`
         echo "Matching branch count: $count"
+        git remote add prime git@github.com:tools-for-credible-digital-twins/tools-for-credible-digital-twins.github.io.git
         git add -A
         git config user.name dependabot-abi && git config user.email dependabot.abi@gmail.com
         git commit -m "Adding latest documentation build."
-        git push origin main:documentation-changes-$count
+        git push prime main:documentation-changes-$count
     - name: Create pull request
       run: |
         gh api \
