@@ -6,8 +6,12 @@
 Tools for credible modelling of digital twins
 =============================================
 
+This is a Sphinx placeholder index page for the EMBC'23 workshop docs.
+It will not be displayed on the resulting website at: https://tools-for-credible-digital-twins.github.io/.
+
 .. toctree::
    :maxdepth: 2
+   :numbered:
    :caption: Contents:
 
    introduction/index
