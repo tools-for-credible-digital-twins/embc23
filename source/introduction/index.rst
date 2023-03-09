@@ -26,6 +26,10 @@ In the second half, attendees will be encouraged to pick and choose from the ran
 We will provide guidance on specific pathways through the tutorials that aim to address specific use-cases, and instructors will be on hand to advise and discuss.
 The available instructors will include expert software developers and researchers.
 
+For the hands-on part of the workshop, it would be useful for attendees to have access to their own laptop.
+Workshop attendees will be provided information on software requirements, installers, etc. prior to the workshop (to help avoid potential connectivity issues on-site) and installers will be available during the workshop as needed.
+A small number of instructor machines with all the software pre-installed will be available on-site as well.
+
 Workshop philosophy
 -------------------
 
