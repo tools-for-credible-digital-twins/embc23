@@ -27,6 +27,8 @@ It will not be displayed on the resulting website at: https://tools-for-credible
 Indices and tables
 ==================
 
+.. bibliography::
+
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`

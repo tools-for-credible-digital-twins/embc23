@@ -33,16 +33,18 @@ For the hands-on part of the workshop, it would be useful for attendees to have 
 Workshop attendees will be provided information on software requirements, installers, etc. prior to the workshop (to help avoid potential connectivity issues on-site) and installers will be available during the workshop as needed.
 A small number of instructor machines with all the software pre-installed will be available on-site as well.
 
+.. _workshop_philosophy:
+
 Workshop philosophy
 -------------------
 
 As you will see through out the hands-on tutorials, we will generally divide things into two distinct approaches.
 
 One takes a more "systems biology" approach, generally used for the lumped-parameter or compartmental modelling and views the model (or collection of models) as the primary data.
-In this part, the COMBINE Archive provides the container to house a piece of work and relevant standards are used to describe the models and simulation experiments typically used for these kinds of modelling projects.
+In this part, the COMBINE Archive :cite:p:`bergmann_combine_2014` provides the container to house a piece of work and relevant standards are used to describe the models and simulation experiments typically used for these kinds of modelling projects.
 
 The other approach is based more on taking experimental or clinical observations and measurements as the primary data, to which models or other computational analyses can be applied to or derived from.
-In this part, we use the SPARC Dataset Structure (SDS) as the container of choice to house a piece of work, with similar standards used to describe the models and simulation experiments in addition to the rich metadata describing the experimental and/or clinical data.
+In this part, we use the SPARC Dataset Structure (SDS) :cite:p:`bandrowski_sparc_2021` as the container of choice to house a piece of work, with similar standards used to describe the models and simulation experiments in addition to the rich metadata describing the experimental and/or clinical data.
 
 We tend to make this distinction in approaches to provide clarity in selection of relevant tools to use to achieve a given task.
 But throughout this workshop we will demonstrate how the use of common standards and harmonised semantic annotations enhance the interoperability between these approaches and ensure that relevant prior work can be reused regardless of how it was created.
