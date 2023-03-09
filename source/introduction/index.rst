@@ -1,10 +1,13 @@
 Introduction
 ============
 
-
 In this `IEEE EMBC 2023 <https://embc.embs.org/2023/>`_ workshop, we will demonstrate a range of tools that encourage users to create, share, and publish physiological models in a reproducible and FAIR manner.
 We will show how using appropriate standard formats and consistently adopting suitable practices eases the transition from reproducible model to reproducible publication, and begins to provide evidence of model credibility that is crucial for the translation of models into clinical applications.
 We will demonstrate examples which are beginning to achieve such translation of models into clinical workflows designed to support specific clinical use-cases.
+
+.. image:: ../_static/project-logos.png
+   :width: 600
+   :alt: Image showing the logos of the main projects associated with this workshop.
 
 The workshop will use free and open-source software tools being developed for the `12 Labours project <https://tinyurl.com/12labours>`_, `SPARC <https://sparc.science>`_, and the `Center for Reproducible Biomedical Modeling <https://reproduciblebiomodels.org>`_.
 We will provide hands-on tutorials using stand-alone desktop or web applications and using services or programming interfaces that could be more easily integrated into existing tooling and practices in your own lab.
@@ -44,5 +47,4 @@ In this part, we use the SPARC Dataset Structure (SDS) as the container of choic
 We tend to make this distinction in approaches to provide clarity in selection of relevant tools to use to achieve a given task.
 But throughout this workshop we will demonstrate how the use of common standards and harmonised semantic annotations enhance the interoperability between these approaches and ensure that relevant prior work can be reused regardless of how it was created.
 This is particularly important as we look to evaluate credibility of modelling and simulation studies in the move to translate into clinical practice.
-
 
