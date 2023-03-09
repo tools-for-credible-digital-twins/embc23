@@ -12,7 +12,8 @@ Workshop facilitators will be on hand to help with installation and usage questi
 All tools and example models and data used in the workshop will be available via `this website <https://tools-for-credible-digital-twins.github.io/>`_ for attendees to access and share, along with suitable documentation to help attendees share what they have learnt with colleagues.
 
 To help encourage the publication of reproducible and credible models, we have launched the `Physiome <https://journal.physiomeproject.org>`_ journal.
-In this workshop, we will discuss recent developments with *Physiome* as we look to make the articles dynamic and interactive '*active papers*' and show how the tools and practices covered throughout the workshop can lead to the publication of your work in this way with minimal additional effort.
+In this workshop, we will discuss recent developments with *Physiome* as we look to make the articles dynamic and interactive '*active papers*', demonstrating how the tools and practices covered throughout the workshop can lead to the publication of your work in this way.
+Such *active papers* will provide building blocks for credible physiological modelling and translational science.
 
 Workshop outline
 ----------------
