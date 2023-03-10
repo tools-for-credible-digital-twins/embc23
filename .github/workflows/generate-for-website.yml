@@ -42,6 +42,7 @@ jobs:
         mkdir -p website/public/documentation/latest
         rm -rf website/public/documentation/latest
         cp -R build/xml/ website/public/documentation/latest/
+        cp -R source/_static website/public/documentation/latest/
     - name: Save branches information
       run: |
         cd website
