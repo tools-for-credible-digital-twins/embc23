@@ -20,7 +20,7 @@ jobs:
         python -m venv venv-sphinx
         source venv-sphinx/bin/activate
         pip install -U pip
-        pip install Sphinx
+        pip install Sphinx sphinxcontrib-bibtex
     - name: Write SSH keys
       run: |
         install -m 600 -D /dev/null ~/.ssh/id_ed25519
