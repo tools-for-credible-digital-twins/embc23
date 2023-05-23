@@ -1,8 +1,7 @@
 Modelling and Simulation Tools
 ==============================
 
-Introduce the modelling and simulation tools.
+Here we will instroduce various software tools used throughout the workshop, ranging from desktop applications through to web-based applications and programming interfaces.
+As mentioned in :numref:`workshop_philosophy` we will cover a range of tools from various domains, and attempt to demonstrate how with the use of appropriate standards they can be chained together to achieve complex workflows through the use of harmonised semantics.
 
-Link out to existing documentation where possible.
-
-Include specific use-cases demonstrating best practices that will lead to FAIR and reproducible and credibility...
+The hands-on tutorials will include specific tasks for attendees to choose from to help gain familiarity with each of the tools, depending on your interests.
