@@ -18,6 +18,12 @@ To help encourage the publication of reproducible and credible models, we have l
 In this workshop, we will discuss recent developments with *Physiome* as we look to make the articles dynamic and interactive '*active papers*', demonstrating how the tools and practices covered throughout the workshop can lead to the publication of your work in this way.
 Such *active papers* will provide building blocks for credible physiological modelling and translational science.
 
+Credibility for us is defined as being able to have a clearly defined context for the model or simulation which uses contextually appropriate data.
+Where verification, and validation is performed within this context.
+We also specify the limitations of the model or simulation explicitly.
+We use version control to track the model or simulation development history, and document the code as well as user and developer guides.
+We also make sure that the model or simulation is FAIR, so third party users and developers can independently review the work.
+
 Workshop outline
 ----------------
 
