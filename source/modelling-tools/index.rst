@@ -15,6 +15,7 @@ Some standards don't lend themselves well to having this kind of core software l
 
 Another tool that works with the SDS is `SPARC-me`_, a SPARC Metadata Editor. This tool aims to provide a Python-based API for working with datasets adhering to the SDS. SPARC-me can then be built into other tools and services to enable support for the SDS.
 
+.. _opencor_tutorial:
 
 Creating, editing, and simulating models with OpenCOR
 -----------------------------------------------------
@@ -31,6 +32,8 @@ The Physiome Model Repository (`PMR`_) is an extensive collection of models, pri
     * modularity and model reuse [`link2 <https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/cellml_imports.html>`_];
     * generating procedural code from CellML models [`link3 <https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html>`_]; and
     * depositing models into PMR using OpenCOR [`link4 <https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/pmr_workspaces_in_opencor.html>`_].
+
+.. _scaffold_mapping_tools:
 
 Mapping data to organ scaffolds
 -------------------------------
