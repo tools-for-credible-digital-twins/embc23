@@ -27,4 +27,18 @@ Furthermore, the modularity inherent in these standards enables parts of models 
 
 .. admonition:: Exercise
 
-    Explore the reproducibility portal https://reproducibilityportal.org/ and see if you can discover some part of a model that might be of interest to you. Grab the Antimony code for that reaction and paste it into MakeSBML to generate a new SBML model.
+    Explore the reproducibility portal https://reproducibilityportal.org/ and see if you can discover some part of a model that might be of interest to you. Grab the Antimony code for that reaction and paste it into `MakeSBML`_ to generate a new SBML model.
+
+The above exercise makes use of the `Antimony <https://github.com/sys-bio/antimony>`_ :cite:`smith_antimony_2009` model definition language as a Human readable form of the models available on the `reproducibility portal <https://reproducibilityportal.org/>`_. The :ref:`figure below <reproducibility_portal_antimony>` shows an example of the Antimony format. Parts of the model (for example the reaction rate rules) can be easily copy-and-pasted into the `MakeSBML`_ web-application to generate a new SBML model. Using MakeSBML to translate the Antimony text into SBML and then translate the SBML back into Antimony makes it easy to see what additional information is needed to make a complete model.
+
+.. _reproducibility_portal_antimony:
+.. figure:: ../_static/reproducibility-portal-antimony.png
+   :width: 600
+   :alt: Image showing the Antimony model language in the reproducibility portal.
+
+   A portion of the `model <https://reproducibilityportal.org/model/647a4b1877b6669655060cd2>`_ definition in the Antimony format at the reproducibility portal.
+
+
+Reuse is further enhanced when models and supporting data and knowledge are shared in a manner the supports discovery and accessibility.
+
+.. _MakeSBML: https://sys-bio.github.io/makesbml/
