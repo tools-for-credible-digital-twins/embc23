@@ -146,3 +146,20 @@ Section: Journal of Integrative Bioinformatics},
 	pmcid = {PMC2735663},
 	pages = {2452--2454},
 }
+
+
+@misc{shin_automated_2023,
+	title = {An {Automated} {Model} {Annotation} {System} ({AMAS}) for {SBML} {Models}},
+	copyright = {© 2023, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/},
+	url = {https://www.biorxiv.org/content/10.1101/2023.07.19.549722v1},
+	doi = {10.1101/2023.07.19.549722},
+	abstract = {Motivation: Annotations of biochemical models provide details of chemical species, documentation of chemical reactions, and other essential information. Unfortunately, the vast majority of biochemical models have few, if any, annotations, or the annotations provide insufficient detail to understand the limitations of the model. The quality and quantity of annotations can be improved by developing tools that recommend annotations. For example, recommender tools have been developed for annotations of genes. Although annotating genes is conceptually similar to annotating biochemical models, there are important technical differences that make it difficult to directly apply this prior work. Results: We present AMAS, a system that predicts annotations for elements of models represented in the Systems Biology Markup Language (SBML) community standard. We provide a general framework for predicting model annotations for a query element based on a database of annotated reference elements and a match score function that calculates the similarity between the query element and reference elements. The framework is instantiated to specific element types (e.g., species, reactions) by specifying the reference database (e.g., ChEBI for species) and the match score function (e.g., string similarity). We analyze the computational efficiency and prediction quality of AMAS for species and reactions in BiGG and BioModels and find that it has sub-second response times and accuracy between 80\% and 95\% depending on specifics of what is predicted. We have incorporated AMAS into an open-source, pip-installable Python package that can run as a command-line tool that predicts and adds annotations to species and reactions to an SBML model. Availability: Our project is hosted at https://github.com/sys-bio/AMAS, where we provide examples, documentation, and source code files. Our source code is licensed under the MIT open-source license.},
+	language = {en},
+	urldate = {2023-07-23},
+	publisher = {bioRxiv},
+	author = {Shin, Woosub and Gennari, John H. and Hellerstein, Joseph L. and Sauro, Herbert M.},
+	month = jul,
+	year = {2023},
+	note = {Pages: 2023.07.19.549722
+Section: New Results},
+}
