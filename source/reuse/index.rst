@@ -20,7 +20,7 @@ The following exercises assume some familiarity with CellML and OpenCOR. For tho
 
     The trace should be the same as the one you get when running the `Fabbri et al. 2017 model`_ from the `SPARC Portal`_:
 
-    - Open the `Simulation Viewer <https://sparc.science/datasets/simulationviewer?id=135>`_ for the `Fabbri et al. 2017 model`_ `dataset <https://sparc.science/datasets/135>`_; and
+    - Open the `Simulation Viewer <https://sparc.science/datasets/simulationviewer?id=135>`__ for the `Fabbri et al. 2017 model`_ `dataset <https://sparc.science/datasets/135>`__; and
     - Click on the ``Run Simulation`` button.
 
 .. admonition:: Exercise 2 - Reuse
@@ -33,7 +33,7 @@ The following exercises assume some familiarity with CellML and OpenCOR. For tho
 
     The trace should be the same as the one you get when running the Fabbri-based composite model from the `SPARC Portal <https://sparc.science/>`_:
 
-    - Open the `Simulation Viewer <https://sparc.science/datasets/simulationviewer?id=157>`_ for the Fabbri-based composite model `dataset <https://sparc.science/datasets/157>`_;
+    - Open the `Simulation Viewer <https://sparc.science/datasets/simulationviewer?id=157>`__ for the Fabbri-based composite model `dataset <https://sparc.science/datasets/157>`__;
     - Change the ``Spike frequency``, the ``Spike number``, and the ``Spike amplitude`` values as needed; and
     - Click on the ``Run Simulation`` button.
 
