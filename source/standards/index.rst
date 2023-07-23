@@ -1,3 +1,5 @@
+.. _section-standards:
+
 Standards
 =========
 
@@ -71,6 +73,8 @@ While it is well established that comprehensive model annotation is an important
 
     We recommend installing the AMAS package into a clean Python virtual environment to avoid contamination of your system Python and/or version conflicts with required dependencies.
 
+
+.. _standard_packaging:
 
 Standardised packaging to improve sharing
 -----------------------------------------
