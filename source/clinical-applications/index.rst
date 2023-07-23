@@ -1,8 +1,6 @@
 Clinical Applications
-==============================
+=====================
 
-In this part of the workshop we describe some specific use-cases demonstrating how we use the standards and tools previously introduced to solve clinically relevant problems.
-As well as this set of use-cases to explore during the hands-on section of the workshop, leading researchers will present their work demonstrating where we are heading in this area.
+This part of the workshop will be covered by the presentations. Please feel free to raise questions, comments, and feedback with the workshop facilitators.
 
-We will include several demonstration use-cases to highlight specific aspects of the clinical workflows which help improve the credibility of a given model, analysis, or simulation experiment.
-While these demonstrations will be based on the tooling and standards used in our work, we will also attempt to illustrate how the various constituent components and tools could be used in your own work.
+Following the workshop, further discussion is possible at the poster 'Vision for the 12 LABOURS Digital Twin Platform' at Poster Bay E, Thursday 11:00-12:30. Alternatively, come to the SPARC booth in the exhibition hall.
