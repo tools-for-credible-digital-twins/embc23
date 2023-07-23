@@ -65,7 +65,7 @@ While it is well established that comprehensive model annotation is an important
 
     Install the `AMAS`_ Python package following the instructions available in the `AMAS documentation <https://amas.readthedocs.io/en/latest/>`_ and then try to use the tools to find recommendations for species and reactions in the demonstration model. And also try updating the model based on those recommendations.
 
-    The demonstration model used in the documentation is available from https://www.ebi.ac.uk/biomodels/BIOMD0000000190#Files, download the file :file:`BIOMD0000000190_urn.xml` and rename it :file:`BIOMD0000000190.xml`.
+    The demonstration model used in the documentation is available from https://www.ebi.ac.uk/biomodels/BIOMD0000000190#Files, download the file :file:`BIOMD0000000190_url.xml` and rename it :file:`BIOMD0000000190.xml`.
 
 .. warning::
 
