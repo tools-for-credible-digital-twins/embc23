@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Tools for credible modelling of digital twins
+Tools for implementing the virtual human twin
 =============================================
 
 This is a Sphinx placeholder index page for the EMBC'23 workshop docs.
