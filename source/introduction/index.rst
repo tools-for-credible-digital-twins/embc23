@@ -1,6 +1,12 @@
 Introduction
 ============
 
+A number of currently funded projects have the ambition of developing virtual human models for clinical applications, both for populations (such as in virtual clinical trials) and for individuals - the so-called ‘Virtual Human Twin’, or VHT, which is often linked with continuously updated data from implantable and wearable devices.
+Along with many others, we are particularly interested in the development of virtual human models that are based on multiscale biophysically-based models that incorporate physiological function from the molecular level to the organ and organ system level in order that they can interpret clinical measurements from genetic testing, blood biomarkers, clinical imaging and physiological function testing.
+This is a huge undertaking that requires global collaboration and coordination.
+The European `EDITH project <https://www.edith-csa.eu/>`_, the New Zealand `12 Labours project <https://tinyurl.com/12labours>`_, and the `SPARC portal <https://sparc.science>`_ are all contributing to this global effort.
+The goal of this workshop is to showcase plans and progress towards developing software tools, computational models, devices, datasets, and clinical applications to support these initiatives.
+
 In this `IEEE EMBC 2023 <https://embc.embs.org/2023/>`_ workshop, we will demonstrate a range of tools that encourage users to create, share, and publish physiological models in a reproducible and FAIR manner.
 We will show how using appropriate standard formats and consistently adopting suitable practices eases the transition from reproducible model to reproducible publication, and begins to provide evidence of model credibility that is crucial for the translation of models into clinical applications.
 We will demonstrate examples which are beginning to achieve such translation of models into clinical workflows designed to support specific clinical use-cases.
