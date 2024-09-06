@@ -42,7 +42,7 @@ The `SPARC scaffold mapping tools`_ provide a suite of tools to enable data to r
 
 .. admonition:: Exercise
 
-    Install the `SPARC scaffold mapping tools`_ following the instructions available via that page. At this time, the current release of the scaffold mapping tools should be 0.19.1.
+    Install the `SPARC scaffold mapping tools`_ following the instructions available via that page. At this time, the current release of the scaffold mapping tools should be 0.21.4.
 
     Also available from the above link are three step-by-step tutorials demonstrating different mapping tasks. Namely embedding segmented data in a SPARC organ scaffold; mapping physiological data; and mapping image data from a flat preparation. Working through these tutorials will give a good sense of the capabilities that can be achieved due to the standards being used and the harmonisation of the metadata.
 
